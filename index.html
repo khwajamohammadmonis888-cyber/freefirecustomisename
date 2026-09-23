@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Free Fire Name Customize Art</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f7fb;
+    color:#182230;
+}
+
+/* TOP BLUE BOX */
+
+.top{
+    background:linear-gradient(135deg,#0866ff,#1746d1);
+    color:white;
+    text-align:center;
+    padding:30px 15px 35px;
+    border-radius:0 0 25px 25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.top h1{
+    font-size:29px;
+    margin-bottom:10px;
+}
+
+.top p{
+    font-size:16px;
+    opacity:.95;
+}
+
+/* AD SPACE */
+
+.ad{
+    width:94%;
+    max-width:728px;
+    min-height:90px;
+    margin:20px auto;
+    border:1px dashed #aeb7c4;
+    background:white;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#8993a1;
+    font-size:12px;
+}
+
+.ad small{
+    display:block;
+    margin-top:5px;
+}
+
+/* MAIN */
+
+.container{
+    width:94%;
+    max-width:800px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    margin:20px 0;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+}
+
+.card h2{
+    text-align:center;
+    color:#1461e8;
+    margin-bottom:8px;
+}
+
+.card .sub{
+    text-align:center;
+    color:#707987;
+    margin-bottom:20px;
+}
+
+/* INPUT */
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+input{
+    width:100%;
+    padding:16px;
+    border:2px solid #dce3ee;
+    border-radius:12px;
+    font-size:18px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#1769e8;
+}
+
+.generate{
+    width:100%;
+    margin-top:15px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#0866ff,#1746d1);
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.generate:hover{
+    opacity:.9;
+}
+
+/* RESULTS */
+
+#results{
+    margin-top:20px;
+}
+
+.result{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:14px;
+    margin-bottom:10px;
+    border:1px solid #e1e6ee;
+    border-radius:12px;
+    background:#fafcff;
+}
+
+.name{
+    flex:1;
+    font-size:20px;
+    word-break:break-all;
+}
+
+.copy{
+    border:none;
+    background:#1769e8;
+    color:white;
+    padding:9px 13px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.copy:active{
+    transform:scale(.96);
+}
+
+/* SPONSOR */
+
+.sponsor{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:14px;
+    padding:18px;
+    margin:20px 0;
+}
+
+.sponsor-title{
+    font-size:11px;
+    color:#777;
+    margin-bottom:7px;
+}
+
+.sponsor h3{
+    margin-bottom:5px;
+}
+
+.sponsor p{
+    color:#68717d;
+}
+
+/* INFO */
+
+.info{
+    line-height:1.7;
+    color:#505a67;
+}
+
+.info h3{
+    color:#1769e8;
+    margin-bottom:8px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#17202d;
+    color:#c8d0da;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:30px;
+    font-size:13px;
+}
+
+@media(max-width:600px){
+
+    .top h1{
+        font-size:24px;
+    }
+
+    .card{
+        padding:18px;
+    }
+
+    .name{
+        font-size:18px;
+    }
+
+    .copy{
+        padding:8px 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="top">
+
+    <h1>Enter Your Name</h1>
+
+    <p>Free Fire Name Customize Art</p>
+
+</div>
+
+
+<!-- TOP GOOGLE AD SPACE -->
+
+<div class="ad">
+
+    <div>
+        <b>ADVERTISEMENT</b>
+        <small>Google AdSense Space</small>
+    </div>
+
+</div>
+
+
+<div class="container">
+
+    <!-- NAME GENERATOR -->
+
+    <div class="card">
+
+        <h2>🔥 Free Fire Name Generator</h2>
+
+        <p class="sub">
+            Enter your name and create stylish Free Fire names.
+        </p>
+
+        <label for="nameInput">
+            Enter Your Name
+        </label>
+
+        <input
+            id="nameInput"
+            type="text"
+            maxlength="20"
+            placeholder="Example: Monis"
+        >
+
+        <button class="generate" onclick="generateNames()">
+            ✨ Generate Stylish Names
+        </button>
+
+        <div id="results"></div>
+
+    </div>
+
+
+    <!-- SPONSORED AD -->
+
+    <div class="sponsor">
+
+        <div class="sponsor-title">
+            SPONSORED
+        </div>
+
+        <h3>Your Business Advertisement</h3>
+
+        <p>
+            Advertise your gaming product, website or service here.
+        </p>
+
+    </div>
+
+
+    <!-- SECOND AD -->
+
+    <div class="ad">
+
+        <div>
+            <b>ADVERTISEMENT</b>
+            <small>Google AdSense Space</small>
+        </div>
+
+    </div>
+
+
+    <!-- ABOUT -->
+
+    <div class="card info">
+
+        <h3>Free Fire Name Customize Art</h3>
+
+        <p>
+            Create stylish and unique names for your Free Fire profile.
+            Enter your name above and choose your favorite design.
+            Tap COPY and paste the name into your game profile.
+        </p>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    © 2026 Free Fire Name Customize Art
+    <br><br>
+    Home · Privacy Policy · Terms · Contact
+
+</footer>
+
+
+<script>
+
+function generateNames(){
+
+    let name =
+        document.getElementById("nameInput").value.trim();
+
+    if(name === ""){
+
+        alert("Please enter your name first.");
+
+        return;
+    }
+
+    let styles = [
+
+        "꧁༺ " + name + " ༻꧂",
+
+        "『" + name + "』",
+
+        "亗 " + name + " 亗",
+
+        "乂 " + name + " 乂",
+
+        "★彡 " + name + " 彡★",
+
+        "꧁" + name + "꧂",
+
+        "♛ " + name + " ♛",
+
+        "☠︎ " + name + " ☠︎",
+
+        "⚡" + name + "⚡",
+
+        "『★』" + name + "『★』",
+
+        "么 " + name + " 么",
+
+        "ツ " + name + " ツ",
+
+        "〆" + name + "〆",
+
+        "メ " + name + " メ",
+
+        "★ " + name + " ★",
+
+        "♕" + name + "♕",
+
+        "亗『" + name + "』亗",
+
+        "꧁༒" + name + "༒꧂",
+
+        "乂★" + name + "★乂",
+
+        "『亗』" + name + "『亗』",
+
+        "☯ " + name + " ☯",
+
+        "♠ " + name + " ♠",
+
+        "♣ " + name + " ♣",
+
+        "⚔ " + name + " ⚔",
+
+        "☬ " + name + " ☬",
+
+        "✦ " + name + " ✦",
+
+        "✧ " + name + " ✧",
+
+        "彡" + name + "彡",
+
+        "么★" + name + "★么",
+
+        "꧁ঔৣ☬" + name + "☬ঔৣ꧂"
+
+    ];
+
+    let results =
+        document.getElementById("results");
+
+    results.innerHTML = "";
+
+    styles.forEach(function(style){
+
+        let row =
+            document.createElement("div");
+
+        row.className = "result";
+
+        let nameElement =
+            document.createElement("div");
+
+        nameElement.className = "name";
+
+        nameElement.textContent = style;
+
+        let button =
+            document.createElement("button");
+
+        button.className = "copy";
+
+        button.textContent = "COPY";
+
+        button.onclick = function(){
+
+            navigator.clipboard.writeText(style);
+
+            button.textContent = "COPIED!";
+
+            setTimeout(function(){
+
+                button.textContent = "COPY";
+
+            },1500);
+
+        };
+
+        row.appendChild(nameElement);
+
+        row.appendChild(button);
+
+        results.appendChild(row);
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
